@@ -140,30 +140,64 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae 
 
 <h3 class="news-title">Receba nossas novidades em primeira mão!</h3>
 <div class="newsletter">
-<input class="email-box" type="email" name="email" id="email" placeholder="Seu email">
-<button class="btn-email" type="submit">Enviar</button>
+<input class="email-box" type="email" name="email" id="email" placeholder="Seu email" required>
+<button type="submit" id="myBtn">Cadastrar</button>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Cadastro feito com sucesso!</p>
+            </div>
+          </div>
 </div>
 
 <footer>
 <div class="footer">
-    <div class="logo"><img src="./img/logo-unisal.png" alt="logo-unisal"></div>
+  <a href="index.html"><div class="logo"><img src="./img/logo-unisal.png" alt="logo-unisal"></div></a>
     <br>
     <ul>
-        <li><a href="#">PRIVACIDADE/TERMOS</a></li>
-        <li><a href="#">COMUNICAÇÃO E IMPRENSA</a></li>
-        <li><a href="#">TRABALHE CONOSCO</a></li>
-        <li><a href="#">CONTATO</a></li>
-        <li><a href="#">OUVIDORIA</a></li>
+        <li><a href="https://unisal.br/politica-de-privacidade/">PRIVACIDADE/TERMOS</a></li>
+        <li><a href="https://unisal.br/blog/">COMUNICAÇÃO E IMPRENSA</a></li>
+        <li><a href="https://unisal.br/trabalhe-conosco/">TRABALHE CONOSCO</a></li>
+        <li><a href="https://unisal.br/contato/">CONTATO</a></li>
+        <li><a href="https://unisal.br/ouvidoria/">OUVIDORIA</a></li>
     </ul>
     <div class="social-media">
-          <a href="#"><i class="fab fa-facebook-square"></i></a>
-          <a href="#"><i class="fab fa-twitter-square"></i></a>
-          <a href="#"><i class="fab fa-instagram-square"></i></a>
-          <a href="#"><i class="fab fa-youtube-square"></i></a>
+          <a href="https://www.facebook.com/unisal"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://twitter.com/unisal?s=20"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.instagram.com/unisaloficial/"><i class="fab fa-instagram-square"></i></a>
+          <a href="https://www.youtube.com/channel/UCfiq07dp84O8KQII_qQzzWA"><i class="fab fa-youtube-square"></i></a>
     </div>
     <p>Todos os direitos reservados © 2020</p>
 </div>
 </footer>
 
+
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
 </body>
 </html>
