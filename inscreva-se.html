@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-inscreva-se.css">
+    <script src="https://kit.fontawesome.com/d8e00ce646.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Unisal</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><div class="logo"><img src="./img/logo-unisal-white.png" alt="logo-unisal"></div></a>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
+            <ul>
+                <li><a href="https://unisal.br/nivel-ensino/graduacao/">Graduação</a></li>
+                <li><a href="https://unisal.br/nivel-ensino/pos-graduacao-lato/">Pós-Graduação</a></li>
+                <li><a href="https://unisal.br/cursoslivres/">Cursos Livres</a></li>
+                <li><a href="https://unisal.br/ead/">EAD</a></li>
+                <li><a href="area-aluno.html">Área do aluno</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+      
+      
+    <h3 class="title">INSCRIÇÃO</h3>
+    <hr class="hr-title">
+      <div class="form">
+        
+        <form action="#">
+          <label for="fname">Nome</label>
+          <input type="text" id="fname" name="firstname" placeholder="Seu nome">
+      
+          <label for="lname">Sobrenome</label>
+          <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome">
+      
+          <label for="country">Curso</label>
+          <select id="country" name="country">
+            <option value="Administração">Administração</option>
+            <option value="Automação Industrial">Automação Industrial</option>
+            <option value="Biomedicina">Biomedicina</option>
+            <option value="Ciências Biológicas">Ciências Biológicas</option>
+            <option value="Comércio Exterior">Comércio Exterior</option>
+            <option value="Cosmética e Imagem Pessoal">Cosmética e Imagem Pessoal</option>
+          </select>
+        
+          <button type="submit" id="myBtn">Cadastrar</button>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Cadastro feito com sucesso!</p>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+    
+      
+
+
+
+
+
+
+
+<footer>
+<div class="footer">
+    <div class="logo"><img src="./img/logo-unisal.png" alt="logo-unisal"></div>
+    <br>
+    <ul>
+        <li><a href="#">PRIVACIDADE/TERMOS</a></li>
+        <li><a href="#">COMUNICAÇÃO E IMPRENSA</a></li>
+        <li><a href="#">TRABALHE CONOSCO</a></li>
+        <li><a href="#">CONTATO</a></li>
+        <li><a href="#">OUVIDORIA</a></li>
+    </ul>
+    <div class="social-media">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fab fa-instagram-square"></i></a>
+          <a href="#"><i class="fab fa-youtube-square"></i></a>
+    </div>
+    <p>Todos os direitos reservados © 2020</p>
+</div>
+</footer>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+</body>
+</html>
