@@ -113,6 +113,26 @@ nav input[type="checkbox"] {
   box-sizing: border-box;
 }
 
+.form input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 .form input[type=submit]:hover {
   background-color: #45a049;
 }

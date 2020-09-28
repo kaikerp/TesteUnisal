@@ -33,11 +33,17 @@
       <div class="form">
         
         <form action="#">
-          <label for="fname">Nome</label>
-          <input type="text" id="fname" name="firstname" placeholder="Seu nome">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome">
       
-          <label for="lname">Sobrenome</label>
-          <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome">
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" id="sobrenome" name="sobrenome" placeholder="Seu sobrenome">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Seu email">
+
+          <label for="cpf">CPF</label>
+          <input oninput="mascara(this)" type="text" id="cpf" name="cpf" placeholder="Seu cpf">
       
           <label for="country">Curso</label>
           <select id="country" name="country">
@@ -115,6 +121,21 @@
       modal.style.display = "none";
     }
   }
+
+  function mascara(i){
+   
+   var v = i.value;
+   
+   if(isNaN(v[v.length-1])){ // impede entrar outro caractere que não seja número
+      i.value = v.substring(0, v.length-1);
+      return;
+   }
+   
+   i.setAttribute("maxlength", "14");
+   if (v.length == 3 || v.length == 7) i.value += ".";
+   if (v.length == 11) i.value += "-";
+
+}
   </script>
 </body>
 </html>
